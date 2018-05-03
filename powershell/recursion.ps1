@@ -20,7 +20,7 @@ $d = ""
 #Check the number of elements is equal.
 Compare-Object $b $c -PassThru | ForEach-Object{$d += $_}
 
-#Check the order of elements si equal.
+#Check the order of elements is equal.
 for ($i=0;$i -lt [Math]::Min($b.length, $c.Length);$i++) {
     if ($b[$i] -ne $c[$i]) {
         $d += $b[$i]
