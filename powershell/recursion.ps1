@@ -17,10 +17,10 @@ $c = f($a)
 
 $d = ""
 
-#Check the number of elements are equal.
+#Check the number of elements is equal.
 Compare-Object $b $c -PassThru | ForEach-Object{$d += $_}
 
-#Check the order of elements are equal.
+#Check the order of elements si equal.
 for ($i=0;$i -lt [Math]::Min($b.length, $c.Length);$i++) {
     if ($b[$i] -ne $c[$i]) {
         $d += $b[$i]
